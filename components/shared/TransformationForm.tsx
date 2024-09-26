@@ -23,12 +23,14 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
+
 import {
   aspectRatioOptions,
   creditFee,
   defaultValues,
   transformationTypes,
 } from "@/constants";
+
 import { CustomField } from "./CustomField";
 import { Input } from "../ui/input";
 import { useEffect, useState, useTransition } from "react";
@@ -159,7 +161,7 @@ const TransformationForm = ({
     const imageSize = aspectRatioOptions[value as AspectRatioKey];
     setImage((prevState: any) => ({
       ...prevState,
-      aspectRation: imageSize.aspectRatio,
+      aspectRatio: imageSize.aspectRatio,
       width: imageSize.width,
       height: imageSize.height,
     }));
@@ -228,7 +230,8 @@ const TransformationForm = ({
               <Select
                 onValueChange={(value) =>
                   onSelectFieldHandler(value, field.onChange)
-                }>
+                }
+                value={field.value}>
                 <SelectTrigger className="select-field">
                   <SelectValue placeholder="Select size" />
                 </SelectTrigger>
