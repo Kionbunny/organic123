@@ -62,7 +62,7 @@ export const Collection = ({
         </ul>
       ) : (
         <div className="collection-empty">
-          <p className="p-20-semibold">Empty List</p>
+          <p className="p-20-semibold">No results found!</p>
         </div>
       )}
 

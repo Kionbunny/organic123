@@ -10,7 +10,7 @@ import { redirect } from "next/navigation";
 import { v2 as cloudinary } from "cloudinary";
 
 const populateUser = (query: any) =>
-  query.polulate({
+  query.populate({
     path: "author",
     model: User,
     select: "_id firstName lastName",
