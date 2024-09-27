@@ -1,36 +1,141 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Imaginify AI
 
-## Getting Started
+![Preview Image](https://github.com/Mubassim-Khan/Imaginify-AI/blob/master/public/assets/images/Preview.png)
 
-First, run the development server:
+<div align="center">
+    <img src="https://img.shields.io/badge/-TypeScript-black?style=for-the-badge&logoColor=white&logo=typescript&color=3178C6" alt="typescript" />
+    <img src="https://img.shields.io/badge/-Next_JS-black?style=for-the-badge&logoColor=white&logo=nextdotjs&color=000000" alt="nextdotjs" />
+    <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="tailwindcss" />
+    <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" alt="mongodb" />
+    <img src="https://img.shields.io/badge/-Stripe-%23563D7C.svg?style=for-the-badge&logo=stripe&logoColor=white" alt="stripe" />
+    <img src="https://img.shields.io/badge/shadcn%2Fui-000000?style=for-the-badge&logo=shadcnui&logoColor=white" alt="shadcn-ui" />
+    <img src="https://img.shields.io/badge/Cloudinary-3448C5?style=for-the-badge&logo=Cloudinary&logoColor=white" alt="cloudinary" />
+</div>
+
+## 📋 <a name="table">Table of Contents</a>
+
+- [Imaginify AI](#imaginify-ai)
+  - [📋 Table of Contents](#-table-of-contents)
+  - [Introduction](#introduction)
+  - [Features](#features)
+  - [Tech Stack 🛠️](#tech-stack-️)
+  - [Getting Started](#getting-started)
+  - [License](#license)
+  - [Contributing](#contributing)
+  - [Acknowledgements](#acknowledgements)
+  - [Contact](#contact)
+
+## <a name="introduction">Introduction</a>
+
+This repository contains the code of a powerful AI SaaS platform, image manipulation tool that leverages cutting-edge AI techniques effortlessly. It excels in image processing capabilities, integrates a secure payment infrastructure, offers advanced image search functionalities, and supports multiple AI features, including image restoration, recoloring, object removal, generative filling, and background removal.
+
+## <a name="features">Features</a>
+
+👉 **Authentication and Authorization**: Secure user access with registration, login, and route protection.
+
+👉 **Community Image Showcase & Advanced Search**: Explore user transformations with pagination and quickly find images using advanced content-based or object-based search.
+
+👉 **AI-Powered Image Editing**: Transform images with features like restoration, recoloring, generative fill, object removal, and background extraction.
+
+👉 **Image Management & Downloads**: Save, share, view details, and manage (delete/update) your transformed images effortlessly.
+
+👉 **Credits System & Purchase**: Earn, purchase, and track credits for image transformations securely through Stripe.
+
+👉 **Profile Page**: Access personal transformed images, view credit info, and manage account details.
+
+👉 **Responsive Design**: Enjoy a seamless experience across devices with an intuitive and user-friendly interface.
+
+## <a name="tech-stack">Tech Stack 🛠️</a>
+
+- [Next.js](https://nextjs.org/) - React.js Framework
+- [TypeScript](https://www.typescriptlang.org/) - Programming Language
+- [Tailwind CSS](https://tailwindcss.com/) - CSS Framework
+- [Shadcn](https://ui.shadcn.com/) - Open Source UI library
+- [MongoDB Atlas](https://www.mongodb.com/cloud/atlas/) - Cloud Database
+- [Stripe](https://stripe.com/) - Payment Processing Platform
+- [Clerk](https://clerk.com/) - Authentication & User management platform
+- [Cloudinary](https://cloudinary.com/) - Cloud-based Image & Video management service
+- [Prettier](https://prettier.io/) - Code Formatter
+
+## <a name="#quick-start">Getting Started</a>
+
+To get started with this project, follow these steps:
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/Mubassim-Khan/Imaginify-AI.git
+```
+
+2. Open the project in your preferred code editor.
+
+3. Install the project dependencies using npm:
+
+```bash
+npm install
+```
+
+4. Set Up Environment Variables by creating a new file named `.env.local` in the root of your project and add the following variables:
+
+```env
+#NEXT
+NEXT_PUBLIC_SERVER_URL=
+
+#MONGODB
+MONGODB_URL=
+
+#CLERK
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
+WEBHOOK_SECRET=
+
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/
+NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/
+
+#CLOUDINARY
+NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=
+CLOUDINARY_API_KEY=
+CLOUDINARY_API_SECRET=
+
+#STRIPE
+STRIPE_SECRET_KEY=
+STRIPE_WEBHOOK_SECRET=
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=
+```
+
+Replace the placeholder values with your actual respective account credentials. You can obtain these credentials by signing up on the [Clerk](https://clerk.com/), [MongoDB](https://www.mongodb.com/), [Cloudinary](https://cloudinary.com/) and [Stripe](https://stripe.com)
+
+5. Run the project
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+6. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+7. To view webhooks, refer to Stripe & Clerk documentation for Webhooks. [Stripe Documentation](https://docs.stripe.com/webhooks) [Clerk Documentation](https://clerk.com/docs/integrations/webhooks/overview)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## <a name="license">License</a>
 
-## Learn More
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
 
-To learn more about Next.js, take a look at the following resources:
+## <a name="contributing">Contributing</a>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Contributions to this project are welcome. If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## <a name="acknowledgements">Acknowledgements</a>
 
-## Deploy on Vercel
+- Copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## <a name="contact">Contact</a>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+If you have any questions, suggestions, or feedback, you can reach out to the project maintainer:
+
+- LinkedIn : [Mubassim Ahmed Khan](https://www.linkedin.com/in/mubassim)
+- Email: [mubassimkhan@gmail.com](mailto:mubassimkhan@gmail.com)
+
+---
+
+<!----->
