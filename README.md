@@ -14,16 +14,14 @@
 
 ## 📋 <a name="table">Table of Contents</a>
 
-- [Imaginify AI](#imaginify-ai)
-  - [📋 Table of Contents](#-table-of-contents)
-  - [Introduction](#introduction)
-  - [Features](#features)
-  - [Tech Stack 🛠️](#tech-stack-️)
-  - [Getting Started](#getting-started)
-  - [License](#license)
-  - [Contributing](#contributing)
-  - [Acknowledgements](#acknowledgements)
-  - [Contact](#contact)
+- [Introduction](#introduction)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+- [License](#license)
+- [Contributing](#contributing)
+- [Acknowledgements](#acknowledgements)
+- [Contact](#contact)
 
 ## <a name="introduction">Introduction</a>
 
