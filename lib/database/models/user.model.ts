@@ -1,5 +1,5 @@
 import { Schema, model, models } from "mongoose";
-
+///User schem along with fields like clerkID  , email, username, photo etc 
 const UserSchema = new Schema({
   clerkId: {
     type: String,

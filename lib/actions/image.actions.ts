@@ -185,3 +185,4 @@ export async function getUserImages({
     handleError(error);
   }
 }
+//// the files in actions folder are just like instances for models 

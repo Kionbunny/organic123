@@ -5,7 +5,7 @@ import Stripe from "stripe";
 import { handleError } from "../utils";
 import { connectToDatabase } from "../database/mongoose";
 import Transaction from "../database/models/transaction.model";
-import { updateCredits } from "./user.actions";
+import updateCredits from "./user.actions.ts";
 
 // To checkout the payment & process
 export async function checkoutCredits(transaction: CheckoutTransactionParams) {
@@ -55,4 +55,7 @@ export async function createTransaction(transaction: CreateTransactionParams) {
   } catch (error) {
     handleError(error);
   }
-}
+}//// Server actions are asyn functions that happen on the server side 
+/// and they can  be used on both client and server component to handle form submission and data mutations 
+/// which also can  be ued for get request 
+/// server actions are alt to API routes where we just define functions instead of writing code for each api route 

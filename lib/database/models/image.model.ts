@@ -1,6 +1,6 @@
 import { Document, model, models, Schema } from "mongoose";
 import { string } from "zod";
-
+/// Object img along with
 export interface IImage extends Document {
   title: string;
   transformationType: string;
@@ -21,7 +21,7 @@ export interface IImage extends Document {
   createdAt?: Date;
   updatedAt?: Date;
 }
-
+/// zbelow is Img schema or blue print like what is should contain 
 const ImageSchema = new Schema({
   title: { type: String, required: true },
   transformationType: { type: String, required: true },

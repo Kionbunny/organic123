@@ -6,7 +6,7 @@ interface MongooseConnection {
   conn: Mongoose | null;
   promise: Promise<Mongoose> | null;
 }
-
+/// catching mongodb  connections 
 let cached: MongooseConnection = (global as any).mongoose;
 
 if (!cached) {
@@ -17,10 +17,10 @@ if (!cached) {
 }
 
 export const connectToDatabase = async () => {
-  if (cached.conn) return cached.conn;
+  if (cached.conn) return cached.conn;  ///optimization we made here by just returning 
 
   if (!MONGODB_URL) throw new Error("Missing MongoDb URL!");
-
+/// create a new promised connection 
   cached.promise =
     cached.promise ||
     mongoose.connect(MONGODB_URL, {
