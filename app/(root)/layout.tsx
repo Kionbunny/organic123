@@ -1,7 +1,7 @@
 //import MobileNav from "@/components/shared/MobileNav";
 // import { Toaster } from "@/components/ui/toaster";
 import React from "react";
-import Sidebar from "@/components/shared/Sidebar.tsx";
+import Sidebar from "@/components/shared/Sidebar";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
